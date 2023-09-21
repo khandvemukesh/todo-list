@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import AuthMiddleware from "./middlewares/AuthMidleware.js";
 import apiRoute, { apiProtected } from "./routes/api.js";
 const app = express();
-const DB_CONNECT="mongodb+srv://khandvemontu4:g9H8Ib0HkVyhAzdN@todocluster.rozshki.mongodb.net/toDoList?retryWrites=true&w=majority";
+const DB_CONNECT="#";
 mongoose.set("strictQuery", false);
 mongoose.connect(DB_CONNECT, {useNewUrlParser:true}, (e)=>console.log(e));
 
